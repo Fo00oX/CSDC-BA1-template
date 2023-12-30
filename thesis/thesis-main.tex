@@ -1,0 +1,122 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+\documentclass[11pt,a4paper,oneside]{scrbook}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{tabularx}
+
+\usepackage[bf,sf]{subfigure}
+\usepackage{geometry}
+\usepackage{colortbl}
+\usepackage{courier}
+\usepackage{listings}
+\lstset{basic-style=\ttfamily,breadlines=true}
+\usepackage{bibtex}
+
+\usepackage{scrlayer-scrpage}
+
+\usepackage[normalem]{ulem}
+\usepackage{hyperref}
+\usepackage{xurl}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{scrletter}
+\usepackage{amsfonts}
+\usepackage{xcolor}
+\usepackage{wasysym}
+\usepackage{amsmath}
+
+% --- Settings for header and footer ---------------------------------
+\clearscrheadfoot
+\pagestyle{scrheadings}
+\automark{chapter}
+
+\ihead{\leftmark}
+\ifoot*{Name Vorname Student}
+\ofoot*{\thepage}
+
+%--- Main Page -------------------------------------------------------
+\begin{document}
+
+    \begin{titlepage}
+        \begin{picture}(50,50)
+            \put(-70,40){\hbox{\includegraphics{images/logo}}}
+        \end{picture}
+
+        \vspace*{-5.8cm}
+        \begin{center}
+            \vspace{6.2cm}
+            {\LARGE \textbf{MY TITLE}}
+            \vspace{0.2cm}
+            {\Large \\MY SUBTITLE}
+            \vspace{2.0cm}
+
+            {\textbf{Bachelor Thesis}}
+            \vspace{0.65cm}
+
+            Submitted in partial fulfillment of the requirements for the degree of \\
+            \vspace{0.65cm}
+            \textbf{Bachelor of Science in Engineering}
+            \vspace{0.65cm}
+
+            to the University of Applied Sciences FH Campus Wien \\
+            \vspace{0.2cm}
+            Bachelor Degree Program: Computer Science and Digital Communications
+            \vspace{1.6cm}
+
+            \textbf{Author:} \\
+            Name Vorname Student
+            \vspace{0.7cm}
+
+            \textbf{Student identification number:} \\
+            1234567890
+            \vspace{0.7cm}
+
+            \textbf{Supervisor:} \\
+            Name Vorname Betreuer
+            \vspace{0.7cm}
+
+            \textbf{Date:} \\
+            \today
+        \end{center}
+    \end{titlepage}
+    \pagenumbering{roman}
+
+    \input{common/declaration-of-authorship}
+    \input{common/abstract}
+
+    % --- Abbrevations --------------------------------------------------
+    \newpage\noindent
+    \input{common/abbrevations}
+
+    % --- Chapters ------------------------------------------------------
+    \tableofcontents
+    \newpage
+    \input{chapters/introduction}
+
+
+    % --- Bibliography ------------------------------------------------------
+    \bibliographystyle{IEEEtran}
+
+    \newpage
+    \addcontentsline{toc}{chapter}{Bibliography}
+    \bibliography{testBib}
+    \newpage
+
+    % --- List of Figures ----------------------------------------------------
+    \newpage
+    \addcontentsline{toc}{chapter}{List of Figures}
+    \listoffigures
+
+    % --- List of Tables -----------------------------------------------------
+    \newpage
+    \addcontentsline{toc}{chapter}{List of Tables}
+    \listoftables
+
+    % --- Appendix ------------------------------------------------------
+    \backmatter
+
+    \input{common/appendix}
+\end{document}
