@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.11.1)  30 DEC 2023 14:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.11.1)  30 DEC 2023 15:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1031,13 +1031,27 @@ Class scrbook Warning: \float@addtolists detected!
 (scrbook)              a package that still implements the
 (scrbook)              deprecated \float@addtolist interface.
 
-)
+) (chapters/sample-figure.tex
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.103     \newpage
-                   [1
+l.1 \chapter
+            {First chapter} [1
+
+
+]
+chapter 2.
+File: images/logo.png Graphic file (type png)
+<use images/logo.png>
+Package pdftex.def Info: images/logo.png  used on input line 6.
+(pdftex.def)             Requested size: 113.82497pt x 83.83298pt.
+) (chapters/sample-table.tex [2
+
+
+]
+chapter 3.
+) [3
 
 
 ] (thesis-main.bbl
@@ -1045,21 +1059,21 @@ l.103     \newpage
 LaTeX Warning: Empty `thebibliography' environment or \BreakBibliography
                before end of `thebibliography' environment on input line 24.
 
-) [2
+) [4
 
 
 ] (thesis-main.lof)
 \tf@lof=\write5
 \openout5 = `thesis-main.lof'.
 
- [3
+ [5
 
 
 ] (thesis-main.lot)
 \tf@lot=\write6
 \openout6 = `thesis-main.lot'.
 
- [4
+ [6
 
 
 ] (common/appendix.tex
@@ -1074,7 +1088,7 @@ l.2 \begin{appendices}
                       
 ? 
 chapter without number
-[5
+[7
 
 
 
@@ -1099,22 +1113,22 @@ Package rerunfilecheck Info: File `thesis-main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 19649 strings out of 474717
- 379176 string characters out of 5748908
+ 19683 strings out of 474717
+ 380023 string characters out of 5748908
  1933036 words of memory out of 5000000
- 41382 multiletter control sequences out of 15000+600000
+ 41404 multiletter control sequences out of 15000+600000
  601253 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,19n,107p,10935b,560s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,19n,107p,10935b,558s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <D:/Users/Mark/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb
 ><D:/Users/Mark/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb>
 <D:/Users/Mark/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><D
 :/Users/Mark/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><D:/
 Users/Mark/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmro10.pfb><D:/U
 sers/Mark/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on thesis-main.pdf (10 pages, 293666 bytes).
+Output written on thesis-main.pdf (12 pages, 299702 bytes).
 PDF statistics:
- 114 PDF objects out of 1000 (max. 8388607)
- 18 named destinations out of 1000 (max. 500000)
- 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 137 PDF objects out of 1000 (max. 8388607)
+ 24 named destinations out of 1000 (max. 500000)
+ 62 words of extra memory for PDF output out of 10000 (max. 10000000)
 
